@@ -1,0 +1,430 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color:rgba(255, 0, 0, 0.357);
+}
+
+.nav{
+    background-color: rgba(33, 16, 16, 0.62);
+    
+}
+header{
+    background-color: rgba(33, 16, 16, 0.62);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 8%;
+    height: 60px;
+    position: fixed;
+    left: 0px;
+    z-index: 999;
+    right: 0;
+    backdrop-filter: blur(10px);
+    
+
+}
+.logo{
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .1s ease;
+
+}
+.logo:hover {
+    font-size: 4rem;
+
+}
+.menu{
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+ ul li{
+    display: inline;
+    padding: 0 2rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 1s ease;
+
+}
+li a:hover {
+    background-color: red;
+    color: white;
+    padding: 18;
+    font-size: 2.4rem ;
+}
+@media screen and (max-width:768px) {
+    ul{
+        display: none;
+    }
+    html{
+        font-size: 60.5%;
+    }
+    .menu{
+        display: flex;
+    }
+    ul.bnav{
+        display: flex;
+        background-color: rgba(165, 42, 42, 0.713);
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        z-index: 999;
+        gap: 3rem;
+        transition: all 2s ease;
+        backdrop-filter: blur(50px);
+        
+    }
+    ul.bnav:hover {
+        background-color: rgba(165, 42, 42, 0.315);
+        color: white;
+        transform: scale(1,1);
+    }
+    
+}
+
+/* home section start  */
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.homet{
+    max-width: 800px;
+    padding-left:7%;
+}
+
+.homet h3{
+    font-size: 5rem;
+    margin-top: 2em;
+    color: white;
+}
+.homet h1{
+    font-size: 8rem;
+    margin-top: .3em;
+    color: white;
+    
+}
+.homet p{
+    font-size: 4rem;
+    letter-spacing: 1px;
+    margin-top: .3em;
+    color: white;
+    letter-spacing: .2rem;
+
+    
+}
+
+.btn{
+    display: inline-block;
+    background-color: rgba(64, 172, 136, 0.67);
+    padding: 1rem 2rem;
+    margin-top: 1em;
+    font-size: 2rem;
+   
+    border-radius: .8em;
+    transition: all 1s ease;
+}
+.btn:hover {
+   
+    background-color: rgba(13, 116, 82, 0.67);
+    padding: 1rem 3rem;
+    color: white;
+
+
+}
+
+.homeimg img{
+    background-color: brown;
+    border-radius: 50%;
+    width: 32vw;
+    position: relative;
+    top:3em;
+    cursor: pointer;
+
+}
+@media screen and (max-width:768px) {
+
+    .homet{
+        margin-left: 0rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+  
+    html{
+        font-size: 60.5%;
+    }
+    .home img{
+        display: none;
+    }
+    
+}
+
+/* about developer */
+.about{
+    width: 100%;
+    min-height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+@media screen and (max-width:768px) {
+  .aboutimg img{
+    width: 30%;
+  }
+
+}
+.aboutimg img{
+    width:34vw;
+    position: relative;
+    left: .5rem;
+    border-radius: 5rem;
+}
+.homet{
+    position: relative;
+    right: 2rem;
+}
+.homet h4{
+    font-size: 5rem;
+    color: white;
+}
+.homet h1{
+    font-size: 6rem;
+}
+
+.homet p{
+    font-size: 2rem;
+}
+
+@media screen and (max-width:768px) {
+  
+    html{
+        font-size: 60.5%;
+    
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+
+
+/* service */
+.service{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+@media screen and (max-width:768px) {
+  
+ .service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+ }
+    
+}
+
+@media screen and (min-width:950px) {
+  .servictext{
+    margin-left: 2rem;
+  }
+
+
+}
+.servictext{
+    border: 1px solid black;
+    min-width: 15%;
+    gap: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: rgba(137, 43, 226, 0.506);
+    border: none;
+
+
+
+
+}
+.servictext:hover {
+    background-color: rgba(137, 43, 226, 0.236);
+    transform: translate(4px,8px)
+}
+
+
+ #serice-icon{
+    font-size: 5rem;
+    font-weight: 900;
+    width: 100px;
+    margin: 2rem 2rem;
+    color: blueviolet;
+}
+.servictext h3{
+    font-size: 4rem;
+    color: white;
+    margin-bottom: .8rem;
+    margin: 0px 2rem;
+
+}
+.servictext p{
+    font-size: 1.6rem;
+    margin-bottom: .8rem;
+}
+
+/* Contact as*/
+.contact{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.form h1{
+    font-size: 7rem;
+    margin-top:2rem;
+    color: white;
+}
+
+
+@media screen and (max-width:850px) {
+    .form{
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+        margin-top: -4rem;
+     
+       
+    
+    }
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: ;
+   
+
+}
+.form input{
+    width: 100%;
+    min-height: 4rem;
+    border-radius: .6rem;
+    border: none;
+    outline: none;
+}
+input[type="submit"]{
+    width: 50%;
+    margin-left: 20%;
+
+
+}
+.textarea{
+    border: none;
+    outline: none;
+    border-radius:.6rem;
+}
+.textarea:hover {
+    border: none;
+}
+
+.footer{
+    width: 100%;
+    min-height: 30vh;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+.footerhome{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.social-icon{
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+.footernav{
+    margin-top: 1rem;
+    margin-left: 4rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.footernav a{
+    color: white;
+    padding: 1rem 3rem;
+  
+
+}
+
+@media screen and (max-width:768px) {
+ .footernav a{
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+ } 
+
+ .cyp{
+    font-size: .5rem;
+ }
+
+}
+.cpy{
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+}
+.footer h1{
+    font-size: 4rem;
+    color: white;
+    margin-left: 90%;  
+    margin-top: -4rem; 
+    transform: rotate(-90deg);
+}
+
+@media screen and (max-width:768px) {
+
+    .footer h1{
+        font-size: 4rem;
+        color: white;
+        margin-left: 85%;  
+        margin-top: 2rem; 
+        transform: rotate(-90deg);
+    }
+
+}
